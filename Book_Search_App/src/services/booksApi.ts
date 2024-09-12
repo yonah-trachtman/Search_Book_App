@@ -3,7 +3,6 @@ import axios from 'axios';
 const API_BASE_URL = 'https://www.googleapis.com/books/v1';
 const API_KEY = 'AIzaSyCzEVvtwkYWlCpf12wS22ORYY3EySRcrOg'; // Your API key
 
-// Define the structure of the response using TypeScript types
 export interface Book {
   id: string;
   volumeInfo: {
@@ -13,6 +12,7 @@ export interface Book {
     imageLinks?: {
       thumbnail: string;
     };
+    publishedDate: string;
   };
 }
 
