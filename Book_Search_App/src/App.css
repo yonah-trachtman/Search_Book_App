@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.book-card {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}

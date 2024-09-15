@@ -9,9 +9,9 @@ interface BookListProps {
 
 const BookList: React.FC<BookListProps> = ({ books, onBookClick }) => {
   return (
-    <div>
+    <div className="books-grid">
       {books.map((book) => (
-        <BookCard key={book.id} book={book} onClick={onBookClick} />
+        <BookCard key={book.id} book={book} onClick={() => onBookClick(book)} />
       ))}
     </div>
   );
